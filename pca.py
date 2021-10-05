@@ -65,20 +65,3 @@ def display_image(orig, proj):
     fig.colorbar(originalPlot, ax=axs[0])
     fig.colorbar(projectionPlot, ax=axs[1])
     plt.show()
-
-
-# In[135]:
-
-
-x = load_and_center_dataset('YaleB_32x32.npy')
-S = get_covariance(x)
-Lambda, U = get_eig(S, 2)
-projection = project_image(x[0], U)
-display_image(x[0], projection)
-
-
-# In[ ]:
-
-
-
-
