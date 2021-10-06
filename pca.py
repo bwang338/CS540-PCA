@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[137]:
-
-
 from scipy.linalg import eigh
 import numpy as np
 import matplotlib.pyplot as plt
